@@ -4,7 +4,11 @@ export default {
   theme: {
     extend: {screens:{
       'xs':'550px'
-    }},
+    },
+    backgroundImage:{
+      'green-bg':" url('./assets/green.jpg')"
+    }
+  },
   },
   plugins: [],
 }
