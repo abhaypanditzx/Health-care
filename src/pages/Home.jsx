@@ -7,7 +7,9 @@ import { FaLocationDot, FaCreditCard } from "react-icons/fa6";
 import { FaHandHoldingHeart, FaMobile } from "react-icons/fa";
 import { GiHealthIncrease } from "react-icons/gi";
 import { LuStethoscope, } from "react-icons/lu";
-import BookAppointment from '../Components/BookAppointment';
+import BookAppointment from '../components/BookAppointment';
+import Locations from "../components/Locations";
+import CostumerReview from '../components/CostumerReview';
 function Home() {
   const GetStartData = [
     {
@@ -78,8 +80,10 @@ function Home() {
           }
         </ul>
         {/* book appointment section */}
-        <BookAppointment/>
       </div>
+        <BookAppointment/>
+        <Locations/>
+        <CostumerReview/>
     </div>
   )
 }

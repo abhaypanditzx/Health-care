@@ -6,7 +6,7 @@ import About from './pages/About'
 import Contact from './pages/Contact'
 import JoinHealthCare from './pages/JoinHealthCare'
 import Error from './pages/Error'
-import Nav from "./Components/Nav"
+import Nav from "./components/Nav"
 const App = () => {
  
   return (

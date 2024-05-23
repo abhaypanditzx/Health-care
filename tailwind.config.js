@@ -6,7 +6,8 @@ export default {
       'xs':'550px'
     },
     backgroundImage:{
-      'green-bg':" url('./assets/green.jpg')"
+      'green-bg':" url('./assets/green.jpg')",
+      'red-bg':"url('./assets/costumerReview.png')"
     }
   },
   },

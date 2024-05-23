@@ -1,16 +1,10 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { IoChevronDown } from "react-icons/io5";
+import UserContext from "../UserContext";
 const SelectCity = () => {
     const [ChevronIcon, setChevronIcon] = useState(false);
     const [dorpDownContentVisibility, setDorpDownContentVisibility] = useState('hidden')
-    const cityList = [
-        { Name: "Delhi" },
-        { Name: "Bangalore" },
-        { Name: "Pune" },
-        { Name: "Mumbai" },
-        { Name: "meerut" },
-        { Name: "Ahmedabad" },
-    ]
+const {cityList} = useContext(UserContext)
 
     return (
         <div className="relative ">
