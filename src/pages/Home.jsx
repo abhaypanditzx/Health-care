@@ -34,7 +34,7 @@ function Home() {
   ]
   const { name } = useContext(UserContext)
   return (
-    <div className='h-full relative w-full z-0'>
+    <div className='h-full relative   w-full z-0'>
       {/* top section  */}
       <div className='custom-shape  flex flex-row max-xs:h-[450px]  overflow-hidden max-md:justify-start justify-between'>
         <div className="  max-lg:p-[40px] max-xs:p-[10px] lg:p-[60px] max-xs:mt-[30px] w-fit">
@@ -61,29 +61,31 @@ function Home() {
         </div>
       </div>
 
-      {/* start here section */}
-      <div className="flex w-full p-5 flex-col">
-        <div className='mb-[60px]'>
-          <h2 className='text-green-500 text-3xl capitalize font-bold'>start here</h2>
-          <p className='text-black text-xl font-semibold '>for the safest hospital in your area</p>
-        </div>
-        <ul className=" grid w-full max-xs:place-items-start xs:place-items-center max-xs:py-5 rounded-xl  max-xs:px-10  xs:p-24  bg-green-100  max-xs:grid-cols-1 xs:grid-cols-2 max-xs:gap-[50px] xs:gap-y-[100px] ">
-          {
-            GetStartData.map((e, index) => {
-              return (
-                <li key={index} className='flex  gap-x-4 items-center font-poppins '>
-                  <div className='bg-white p-5 rounded-full text-[#1ED225]  text-2xl '>{e.icon} </div>
-                  <p className='text-lg text-start w-max'>  {e.Text}</p>  </li>
+      <div className='p-10 max-xs:p-5'> 
+        {/* start here section */}
+        <div className="flex w-full p-5 flex-col">
+          <div className='mb-[60px]'>
+            <h2 className='text-green-500 text-3xl capitalize font-bold'>start here</h2>
+            <p className='text-black text-xl font-semibold '>for the safest hospital in your area</p>
+          </div>
+          <ul className=" grid w-full max-xs:place-items-start xs:place-items-center max-xs:py-5 rounded-xl  max-xs:px-10  xs:p-24  bg-green-100  max-xs:grid-cols-1 xs:grid-cols-2 max-xs:gap-[50px] xs:gap-y-[100px] ">
+            {
+              GetStartData.map((e, index) => {
+                return (
+                  <li key={index} className='flex  gap-x-4 items-center font-poppins '>
+                    <div className='bg-white p-5 rounded-full text-[#1ED225]  text-2xl '>{e.icon} </div>
+                    <p className='text-lg text-start w-max'>  {e.Text}</p>  </li>
 
-              )
-            })
-          }
-        </ul>
-        {/* book appointment section */}
+                )
+              })
+            }
+          </ul>
+          {/* book appointment section */}
+        </div>
+        <BookAppointment />
+        <Locations />
+        <CostumerReview />
       </div>
-        <BookAppointment/>
-        <Locations/>
-        <CostumerReview/>
     </div>
   )
 }

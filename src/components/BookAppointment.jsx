@@ -12,19 +12,19 @@ const BookAppointment = () => {
             <form className="flex max-xs:mt-[20px] border-l-[1px] border-gray-600 p-5 xs:mt-[20px]  ml-5 flex-col ">
                <div className="grid grid-cols-2 mt-[10px] max-xs:grid-cols-1 max-xs:gap-2 xs:gap-y-4 xs:gap-x-2 py-4">
                   <div className="flex flex-col"> <label className="text-gray-900 max-xs:text-sm py-0.5 " htmlFor="Fname">first name</label>
-                     <input className='bg-gray-100 w-fit  max-w-[200px] p-2 placeholder:text-gray-500 max-xs:px-2  max-xs:placeholder:text-xs' type="text" placeholder="first name" /></div>
+                     <input className='bg-gray-100 w-fit  max-w-[300px] max-xs:w-[300px] p-2 placeholder:text-gray-500 max-xs:px-2  max-xs:placeholder:text-xs' type="text" placeholder="first name" /></div>
                   <div className="flex flex-col">
                      <label className="text-gray-900 max-xs:text-sm py-0.5 " htmlFor="Lname">last name</label>
-                     <input className='bg-gray-100 w-fit max-w-[200px] p-2 placeholder:text-gray-500 max-xs:px-2  max-xs:placeholder:text-xs' type="text" placeholder="last name" /></div>
+                     <input className='bg-gray-100 w-fit max-w-[300px] max-xs:w-[300px] p-2 placeholder:text-gray-500 max-xs:px-2  max-xs:placeholder:text-xs' type="text" placeholder="last name" /></div>
                   <div className="flex flex-col"><label className="text-gray-900 max-xs:text-sm py-0.5 " htmlFor="Lname">email</label>
-                     <input className='bg-gray-100 w-fit  max-w-[200px] p-2 placeholder:text-gray-500 max-xs:px-2  max-xs:placeholder:text-xs' type="email" placeholder="email" /></div>
+                     <input className='bg-gray-100 w-fit  max-w-[300px] max-xs:w-[300px] p-2 placeholder:text-gray-500 max-xs:px-2  max-xs:placeholder:text-xs' type="email" placeholder="email" /></div>
                   <div className="flex flex-col">
                      <label className="text-gray-900 max-xs:text-sm py-0.5 " htmlFor="Lname">contact no.</label>
-                     <input className='bg-gray-100 w-fit  max-w-[200px] p-2 placeholder:text-gray-500 max-xs:px-2  max-xs:placeholder:text-xs' type="tel" placeholder="mobile no." />
+                     <input className='bg-gray-100 w-fit  max-w-[300px] max-xs:w-[300px] p-2 placeholder:text-gray-500 max-xs:px-2  max-xs:placeholder:text-xs' type="tel" placeholder="mobile no." />
                   </div>
                </div>
                <label htmlFor="date" className="font-roboto pb-4  text-gray-900 text-lg max-xs:mt-[10px] mt-[30px] ">Select Schedule</label>
-               <input type="date" id='date' className=" p-2 max-xs:text-xs  max-xs:p-2 bg-gray-100 xl:w-[400px]" />
+               <input type="date" p id='date' className=" p-2 max-xs:text-xs  max-xs:w-[300px] max-xs:p-2 bg-gray-100 xl:w-[400px]" />
                <div className="mt-[40px] flex flex-col mt">
                   <label htmlFor="appointmentType" className="font-roboto text-lg text-gray-900 "> Appointment Type</label>
                   <select id='appointmentType' className="p-2  text-gray-500 mt-4 max-xs:text-xs max-xs:p-2 max-w-[400px]">
