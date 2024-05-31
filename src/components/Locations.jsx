@@ -11,7 +11,7 @@ const Location = () => {
   {
     cityList.map((e,i)=>{
       return(
-        <li key={i} className="text-white cursor-pointer max-xs:w-[110px] hover:bg-green-800  bg-green-600 xs:w-[150px] text-center px-4 py-2">
+        <li key={i} className="text-white cursor-pointer max-xs:w-[110px] hover:bg-black/95  bg-[#272727] xs:w-[150px] text-center px-4 py-2">
          {e.Name}
         </li>
       )

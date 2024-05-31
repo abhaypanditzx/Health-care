@@ -30,6 +30,7 @@ export const ContextProvider = ({ children }) => {
     ]
     const costumerData = [
         {
+            id:0,
             name: 'rajan tiwari',
             ratingIcon:  [<IoStar />  ,<IoStar /> , <IoStar /> , <IoStar /> ],
             rating:'4.0',
@@ -37,14 +38,16 @@ export const ContextProvider = ({ children }) => {
             img: rajanImg,
         },
         {
-            name: 'suhani yadav',
+            id:1,
+            name: 'lakshay choudhary ',
             ratingIcon: [<IoStar />  ,<IoStar /> , <IoStar /> , <IoStar /> , <IoStar /> ],
             rating:'5.0',
             comment: "we are very satisfied with health care services.and we will recommend  ",
             img: lakshayImg,
         },
         {
-            name: 'lakshay choudhary',
+            id:2,
+            name: 'suhani yadav',
             ratingIcon:  [<IoStar />  ,<IoStar /> , <IoStar /> , <IoStar /> ,<IoStarHalf/>],
             rating:'4.5',
             comment: "we are very satisfied with health care services.and we will recommend  ",

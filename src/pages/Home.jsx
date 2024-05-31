@@ -36,7 +36,7 @@ function Home() {
     <div className='h-full relative   w-full z-0'>
       {/* top section  */}
       <div className='doctor-bg w-screen min-h-[220px] flex justify-center py-[100px]  sm:h-[390px] lg:h-[700px]'>
-        <div className='bg-white/30 backdrop-blur-sm md:w-[700px] flex flex-col p-5 justify-around md:h-[350px] min-h-[150px] min-w-[200px]'>
+        <div className='bg-white/30 backdrop-blur-sm md:w-[700px] flex flex-col p-5 justify-around md:h-[350px] min-h-[150px]  min-w-[200px]'>
           <div className=" text-6xl font-bold text-shadow font-roboto ">
            <span className='text-white'> HEALTH CARE</span> <span className='text-black'>YOUR FAMILY DOCTOR</span>
           </div>
@@ -51,7 +51,7 @@ function Home() {
             <h2 className='text-green-500 text-3xl capitalize font-bold'>start here</h2>
             <p className='text-black text-xl font-semibold '>for the safest hospital in your area</p>
           </div>
-          <ul className=" grid w-full max-xs:place-items-start xs:place-items-center max-xs:py-5 rounded-xl  max-xs:px-10  xs:p-24  bg-green-100  max-xs:grid-cols-1 xs:grid-cols-2 max-xs:gap-[50px] xs:gap-y-[100px] ">
+          <ul className=" grid w-full max-xs:place-items-start xs:place-items-center max-xs:py-5   max-xs:px-10  xs:p-24  bg-green-100 rounded-xl  max-xs:grid-cols-1 xs:grid-cols-2 max-xs:gap-[50px] xs:gap-y-[100px] ">
             {
               GetStartData.map((e, index) => {
                 return (

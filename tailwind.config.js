@@ -7,7 +7,7 @@ export default {
     },
     backgroundImage:{
       'green-bg':" url('./assets/green.jpg')",
-      'red-bg':"url('./assets/costumerReview.png')"
+      'black-image':"url('./assets/costumerReviewBlackBg.png')"
     }
   },
   },
