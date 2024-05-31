@@ -50,3 +50,12 @@
 body {
   background-color: rgb(247, 247, 247);
 }
+.doctor-bg{
+  background-image: url('./assets/doctor.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+.text-shadow{
+  text-shadow: gray ;
+}

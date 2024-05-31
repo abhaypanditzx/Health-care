@@ -1,5 +1,4 @@
 import React from 'react'
-import bannerImage from "../assets/circleDoctor.png"
 import { useContext } from "react"
 import UserContext from '../UserContext'
 import { LiaChevronLeftSolid } from "react-icons/lia";
@@ -36,28 +35,12 @@ function Home() {
   return (
     <div className='h-full relative   w-full z-0'>
       {/* top section  */}
-      <div className='custom-shape  flex flex-row max-xs:h-[450px]  overflow-hidden max-md:justify-start justify-between'>
-        <div className="  max-lg:p-[40px] max-xs:p-[10px] lg:p-[60px] max-xs:mt-[30px] w-fit">
-          <h1 className="headline-title font-roboto uppercase font-semibold  max-lg:text-5xl  lg:text-6xl  leading-[80px] tracking-[-2px]  ">
-            <span className='text-white '> health care </span>
-            <span className="text-[#1D1C1C]">your <br /> family doctor</span>
-          </h1>
-          <h5 className="text-gray-700 py-4  max-md:text-sm max-lg:mx-2  mx-6 text-lg">
-            -we care about you and your loved ones.
-          </h5>
-          <ul className="  mt-10 max-md:hidden text-white">
-            <li className='flex gap-x-4 text-lg text-shadow items-center tracking-wide font-semibold font-roboto '><LiaChevronLeftSolid />24/7 Caregiving Services</li>
-            <li className='flex gap-x-4 text-lg text-shadow items-center tracking-wide font-semibold font-roboto '><LiaChevronLeftSolid />Medical Checkup At Home</li>
-            <li className='flex gap-x-4 text-lg text-shadow items-center tracking-wide font-semibold font-roboto '><LiaChevronLeftSolid />Hospital Attendant Services</li>
-          </ul>
-        </div>
-        <div className='w-fit p-2'>
-          <img src={bannerImage} className='min-w-[200px] max-sm:hidden max-sm:w-[300px] p-4 md:w-[500px]  lg:w-[600px]' alt='doctors image banner' />
-          <ul className="  mt-10 max-md:block max-sm:hidden md:hidden text-white">
-            <li className='flex gap-x-4 text-lg text-shadow items-center tracking-wide font-semibold font-roboto '><LiaChevronLeftSolid />24/7 Caregiving Services</li>
-            <li className='flex gap-x-4 text-lg text-shadow items-center tracking-wide font-semibold font-roboto '><LiaChevronLeftSolid />Medical Checkup At Home</li>
-            <li className='flex gap-x-4 text-lg text-shadow items-center tracking-wide font-semibold font-roboto '><LiaChevronLeftSolid />Hospital Attendant Services</li>
-          </ul>
+      <div className='doctor-bg w-screen min-h-[220px] flex justify-center py-[100px]  sm:h-[390px] lg:h-[700px]'>
+        <div className='bg-white/30 backdrop-blur-sm md:w-[700px] flex flex-col p-5 justify-around md:h-[350px] min-h-[150px] min-w-[200px]'>
+          <div className=" text-6xl font-bold text-shadow font-roboto ">
+           <span className='text-white'> HEALTH CARE</span> <span className='text-black'>YOUR FAMILY DOCTOR</span>
+          </div>
+          <p className='font-readex'>Our 24/7 Caregiving Services provide round-the-clock care for patients who require continuous assistance. Our team of dedicated caregivers ensures that patients receive the necessary support and supervision at any time of the day or night.</p>
         </div>
       </div>
 
