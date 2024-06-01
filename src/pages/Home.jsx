@@ -36,7 +36,7 @@ function Home() {
     <div className='h-full relative   w-full z-0'>
       {/* top section  */}
       <div className='doctor-bg w-screen min-h-[220px] flex justify-center py-[100px]  sm:h-[390px] lg:h-[700px]'>
-        <div className='bg-white/30 backdrop-blur-sm md:w-[700px] flex flex-col p-5 justify-around md:h-[350px] min-h-[150px]  min-w-[200px]'>
+        <div className='bg-white/30 backdrop-blur-sm md:w-[700px] max-xs:w-[200px] flex flex-col p-5 justify-around md:h-[350px] min-h-[150px]  min-w-[200px]'>
           <div className=" text-6xl font-bold text-shadow font-roboto ">
            <span className='text-white'> HEALTH CARE</span> <span className='text-black'>YOUR FAMILY DOCTOR</span>
           </div>
